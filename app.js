@@ -22,7 +22,7 @@ mainForm.addEventListener('submit', e => {
     const calculatedInche = pxs / 96;
     const calculatedCm = calculatedInche * 2.54;
     const calculatedMm = calculatedCm * 10;
-    const calculatedPt = calculatedInche / 72;
+    const calculatedPt = calculatedInche * 72;
     const calculatedPc = calculatedPt / 12;
 
     // Insert measurements in inputs
