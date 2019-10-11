@@ -8,6 +8,7 @@ const cm = document.querySelector('#cm');
 const mm = document.querySelector('#mm');
 const pt = document.querySelector('#pt');
 const pc = document.querySelector('#pc');
+const percent = document.querySelector('#percent');
 
 // Main Event
 mainForm.addEventListener('submit', e => {
@@ -24,6 +25,7 @@ mainForm.addEventListener('submit', e => {
     const calculatedMm = calculatedCm * 10;
     const calculatedPt = calculatedInche * 72;
     const calculatedPc = calculatedPt / 12;
+    const calculatedPercent = pxs / 16 * 100;
 
     // Insert measurements in inputs
     emRem.value = calculatedEmRem;
@@ -32,6 +34,7 @@ mainForm.addEventListener('submit', e => {
     mm.value = calculatedMm;
     pt.value = calculatedPt;
     pc.value = calculatedPc;
+    percent.value = calculatedPercent;
 
   }, 3000);
 
